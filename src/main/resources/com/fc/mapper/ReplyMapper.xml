@@ -24,7 +24,21 @@
     <insert id="insertReply">
         insert into reply(content,uid,pid,reply_time) values(#{content},#{user.uid},#{post.pid},date_format(now(),'%Y-%c-%d %H:%i:%s'))
     </insert>
-
+	
+	<!-- 
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz 
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
+	-->
+	
     <select id="listReply" resultMap="replyMap">
         select r.rid,r.content,u.uid,u.username,u.head_url from reply r join user u on r.uid=u.uid
         where pid=#{pid}
