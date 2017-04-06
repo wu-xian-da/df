@@ -3,10 +3,19 @@
 <mapper namespace="com.fc.mapper.TopicMapper">
 
     <select id="listTopic" resultType="com.fc.model.Topic">
-        select tid,name,content,image from topic
+        select 
+	        tid,
+	        name,
+	        content,
+	        image 
+        from 
+        	topic
     </select>
 
     <select id="listImage" resultType="string">
-        select image_url from image
+        select 
+       		image_url 
+        from 
+        	image
     </select>
 </mapper>

@@ -17,6 +17,7 @@ public class ReplyController {
 
     @Autowired
     private ReplyService replyService;
+   
 
     @RequestMapping("/reply.do")
     public String reply(int pid, String content, HttpSession session){

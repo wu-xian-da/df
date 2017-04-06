@@ -37,6 +37,8 @@
 	abcdefghijklmnopqrstuvwxyz
 	abcdefghijklmnopqrstuvwxyz
 	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
+	abcdefghijklmnopqrstuvwxyz
 	-->
 	
     <select id="listReply" resultMap="replyMap">

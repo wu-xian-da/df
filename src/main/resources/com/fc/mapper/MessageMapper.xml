@@ -4,8 +4,10 @@
 
 
     <insert id="insertMessage">
-        insert into message(uid,other_id,other_username,operation,post_id,displayed_content)
-        values(#{uid},#{otherId},#{otherUsername},#{operation},#{postId},#{displayedContent})
+        insert into message
+        (uid,other_id,other_username,operation,post_id,displayed_content)
+        values
+        (#{uid},#{otherId},#{otherUsername},#{operation},#{postId},#{displayedContent})
     </insert>
 
     <select id="listMessageByUid" resultType="com.fc.model.Message">
